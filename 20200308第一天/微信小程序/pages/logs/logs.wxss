@@ -1,0 +1,26 @@
+.filter-display img{
+        width: 150px;height: auto;
+    }
+    .blur{
+        filter: blur(8px);
+    }
+    .grayscale{
+        filter: grayscale(90%);
+    }
+    .opacity{
+        filter: opacity(25%);
+    }
+    .multiple{
+        filter: blur(8px) grayscale(90%) opacity(25%);
+    }
+
+
+.filter-display image{
+  width: 150px;height: auto;
+}
+.grayscale{
+  filter: grayscale(90%);
+}
+.grayscale-hover{
+  filter:grayscale(0);
+}

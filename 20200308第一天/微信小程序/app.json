@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/pub-action/pub-action",
+    "pages/home/imglist/imglist"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1772cb",
+    "navigationBarTitleText": "云开发技术训练营",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/check.png",
+        "selectedIconPath": "images/check surface.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人信息",
+        "iconPath": "images/cancel.png",
+        "selectedIconPath": "images/cancel white.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "关于",
+        "iconPath": "images/wifi.png",
+        "selectedIconPath": "images/wifi-click.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
