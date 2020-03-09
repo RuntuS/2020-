@@ -1,0 +1,19 @@
+/* pages/my-inf/my-inf.wxss */
+.img{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-box{
+  margin: 0 auto;
+}
+
+.font{
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

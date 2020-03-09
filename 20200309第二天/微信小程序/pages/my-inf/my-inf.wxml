@@ -1,0 +1,12 @@
+<view>
+  <view>
+    <!-- <image></image> -->
+    <view class="img-box">
+      <image src="{{userInfo.avatarUrl}}" class="img"></image>
+    </view>
+    <view class="font">欢迎,{{userInfo.nickName}}</view>
+  </view>
+  <view>
+  
+  </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/exam-page/exam-page.wxss */
+.weui-grid{
+  width: 20%;
+}

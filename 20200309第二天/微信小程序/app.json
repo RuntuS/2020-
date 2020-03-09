@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/my-inf/my-inf",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/exam-page/exam-page"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my-inf/my-inf",
+        "text": "个人信息"
+      },
+      {
+        "pagePath": "pages/exam-page/exam-page",
+        "text": "测试页面"
+      }
+    ]
+  }
+}
