@@ -1,0 +1,15 @@
+<view>"云开发技术训练营"第5个字符 {{charat}}</view>
+<view>两个字符串连接后的结果：{{concat}}</view>
+<view>CloudBase Camp字母大写：{{uppercase}}</view>
+<view>b的绝对值：{{abs}}</view>
+<view>x的y次幂：{{pow}}</view>
+<view>返回a是正还是负：{{sign}}</view>
+<view>now对象：{{now}}</view>
+<view>{{fullyear}}年</view>
+<view bindtap="catchD" data-id="dsa">{{date}}日</view>
+<view>星期{{day}}</view>
+<view>{{hours}}时</view>
+<view>{{minutes}}分</view>
+<view>{{seconds}}秒</view>
+<view>1970年1月1日至今的毫秒数：{{time}}</view>
+{{sd}}
