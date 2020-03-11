@@ -24,7 +24,8 @@ Page({
     hours: now.getHours(),
     minutes: now.getMinutes(),
     seconds: now.getSeconds(),
-    time: now.getTime()
+    time: now.getTime(),
+    dbData: {}
   },
 
   /**
@@ -81,7 +82,18 @@ Page({
   onReachBottom: function () {
 
   },
-
+  
+  catchDb(){
+    const db = wx.cloud.database();
+    console.log(db);
+    wx.cloud.callFunction({
+      name : "login",
+      data: {a:1},
+      success(res){
+        console.log(res);
+      }
+    })
+  },
   /**
    * 用户点击右上角分享
    */

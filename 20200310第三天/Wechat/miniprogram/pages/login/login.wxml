@@ -13,3 +13,4 @@
 <view>{{seconds}}秒</view>
 <view>1970年1月1日至今的毫秒数：{{time}}</view>
 {{sd}}
+<button bindtap="catchDb">{{dbData}}</button>

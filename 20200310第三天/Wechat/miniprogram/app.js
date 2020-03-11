@@ -1,6 +1,16 @@
 //app.js
 App({
   onLaunch: function () {
+    if(!wx.cloud)
+    {
+
+    }else
+    {
+      wx.cloud.init({
+        env: "youdiansao-6eymc",
+        traceUser: true
+      })
+    }
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

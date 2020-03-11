@@ -1,0 +1,2 @@
+<button bindtap="retang">调用长方形函数</button>
+<button bindtap="asyncF">调用异步测试函数</button>
