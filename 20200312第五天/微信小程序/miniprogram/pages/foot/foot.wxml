@@ -1,0 +1,5 @@
+
+<button bindtap="chooseImg">选择图片</button>
+<view wx:for-items="{{imgurl}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}" data-src="{{item}} " bindtap="previewImg" style="width:100px;float:left"></image>
+</view>
