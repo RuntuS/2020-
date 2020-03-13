@@ -1,0 +1,41 @@
+<view>
+  <!-- 没有允许获得登录状态之前的组件 -->
+  <view wx:if="{{isH ? true : false}}" class="button-box">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfomation"> 点击获取用户信息 </button>
+  </view>
+
+  <!-- 获取登录状态后的展示 -->
+  <view wx:else>
+  <!-- 头像+信息 -->
+      <view class="head-inf">
+        <image src="{{userInfo.avatarUrl}}" class="image"></image>
+        <view class="font">{{userInfo.nickName}}</view>
+      </view>
+      <!-- 两个跳转 -->
+      <view class="router">
+
+      <!-- 跳转wiki -->
+        <view class="wiki" bindtap="router_to_wiki">
+          <view>
+            <image src="" />
+          </view>
+
+          <view>
+            wiki
+          </view>
+
+        </view>
+
+      <!-- 跳转作者信息 -->
+        <view class="auth-inf" bindtap="router_to_about_me">
+          <view>
+            <image src="" />
+          </view>
+          <view>
+            关于本人
+          </view>
+        </view>
+      <!-- 分割线 -->
+      </view>
+  </view>
+</view>

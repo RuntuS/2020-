@@ -1,0 +1,21 @@
+<view>
+  <!-- 没图片显示 -->
+  <view class="no-photo" wx:if="{{no_photo}}"> 
+    <text class="font"> 您还没有上传图片哟，请按下面的按钮进行上传。</text>
+  </view>
+
+    <view bindtap="upload_image" class="upload-box" wx:if="{{!is_loading}}">
+      上传图片
+    </view>
+
+    
+<!-- 上传中显示 -->
+  <view wx:if="{{is_loading}}">
+    <button bindtap="continue_upload">继续上传</button>
+    <view wx:for="{{tem_file_path}}" wx:key="*this">
+        <image src="{{item}}" style="height:200rpx; width:200rpx;"> </image>
+    </view>
+    <input placeholder="请输入相册名称" bindinput="current_catch_input"></input>
+    <button bindtap="upload_to_cloud">确认上传</button>
+  </view>
+</view>
