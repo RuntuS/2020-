@@ -1,4 +1,5 @@
 // miniprogram/pages/login/login.js
+// let app = getApp();
 Page({
 
   /**

@@ -1,4 +1,5 @@
 // miniprogram/pages/rel-page/login/login.js
+let app = getApp();
 Page({
 
   /**
@@ -73,6 +74,16 @@ Page({
       userInfo : e.detail.userInfo,
       isH : false
     })
+
+    wx.cloud.callFunction({
+      name : "login",
+      data : {},
+      success(res) {
+        app.globalData.openid = res.result.openid
+        console.log(res.result.openid)
+      }
+    })
+    app.globalData.userInfo = this.data.userInfo;
   },
 
   router_to_wiki(){

@@ -12,6 +12,7 @@
         <view class="font">{{userInfo.nickName}}</view>
       </view>
       <!-- 两个跳转 -->
+      
       <view class="router">
 
       <!-- 跳转wiki -->

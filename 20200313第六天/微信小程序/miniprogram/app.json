@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/rel-page/wiki/wiki",
     "pages/rel-page/login/login",
+    "pages/rel-page/wiki/wiki",
     "pages/login/login",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -16,7 +16,8 @@
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
     "pages/im/room/room",
-    "pages/rel-page/about-me/about-me"
+    "pages/rel-page/about-me/about-me",
+    "pages/rel-page/wiki/wiki-photo/wiki-photo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

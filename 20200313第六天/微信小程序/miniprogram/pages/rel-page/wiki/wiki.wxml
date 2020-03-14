@@ -4,10 +4,21 @@
     <text class="font"> 您还没有上传图片哟，请按下面的按钮进行上传。</text>
   </view>
 
-    <view bindtap="upload_image" class="upload-box" wx:if="{{!is_loading}}">
-      上传图片
+<!--  预览界面 -->
+    <view class="preview-box">
+
+    <!-- 有图循环界面 -->
+      <view wx:for="{{the_init_cloud_photo}}" wx:key="{{index}}" wx:if="{{!is_loading}}" class="have-photo-box" bindtap="trun_to_photo" data-name="{{item.colum_name}}">
+        <image  src="{{item.imagePath[0]}}"></image> 
+        <view> {{item.colum_name}}</view>
+      </view>
+
     </view>
 
+    <!-- 增加相册模块 -->
+   <view bindtap="upload_image" class="upload-box" wx:if="{{!is_loading}}" >
+        上传图片
+      </view>
     
 <!-- 上传中显示 -->
   <view wx:if="{{is_loading}}">
@@ -18,4 +29,7 @@
     <input placeholder="请输入相册名称" bindinput="current_catch_input"></input>
     <button bindtap="upload_to_cloud">确认上传</button>
   </view>
+
+
+
 </view>
