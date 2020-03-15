@@ -1,2 +1,21 @@
 <!--miniprogram/pages/rel-page/wiki/wiki-photo/wiki-photo.wxml-->
-<text>miniprogram/pages/rel-page/wiki/wiki-photo/wiki-photo.wxml</text>
+
+<view class="font">{{c_name}}</view>
+
+<view class="wiki-photo">
+  <view wx:for="{{init_image}}" class="block-box">
+    <!-- 图片展示 -->
+      <view class="image-box">
+        <image src="{{item}}" ></image>
+      </view>
+
+      <!-- 删除功能 -->
+      <view class="delete-box">
+          <button bindtap="delete_photo">删除</button>
+      </view>
+  </view>
+</view>
+
+
+<!-- 添加图片 -->
+<image src="/images/add.png" class="add-photo" bindtap="add_photo"></image>

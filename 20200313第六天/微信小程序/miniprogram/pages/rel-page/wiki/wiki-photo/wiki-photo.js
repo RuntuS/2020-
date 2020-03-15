@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    c_name : "" //唯一标识相册名
+    c_name : "" ,//唯一标识相册名
+    init_image: []
   },
 
   /**
@@ -15,7 +16,7 @@ Page({
   onLoad: function (options) {
     console.log(options.c_name)
     this.setData({
-      c_name : options.c_name
+      c_name : options.c_name,
     })
   },
 
@@ -41,6 +42,9 @@ Page({
     }).get({
       success(res) {
         console.log(res);
+        pointer_this.setData({
+          init_image : [...res.data[0].imagePath]
+        })
       }
     })
   },
@@ -78,5 +82,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  add_photo(){
+
+  },
+
+  delete_photo(){
+    
   }
 })

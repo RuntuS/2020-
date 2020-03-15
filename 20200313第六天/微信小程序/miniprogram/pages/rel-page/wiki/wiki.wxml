@@ -8,16 +8,16 @@
     <view class="preview-box">
 
     <!-- 有图循环界面 -->
-      <view wx:for="{{the_init_cloud_photo}}" wx:key="{{index}}" wx:if="{{!is_loading}}" class="have-photo-box" bindtap="trun_to_photo" data-name="{{item.colum_name}}">
-        <image  src="{{item.imagePath[0]}}"></image> 
-        <view> {{item.colum_name}}</view>
+      <view wx:for="{{the_init_cloud_photo}}"  wx:if="{{!is_loading}}" class="have-photo-box" bindtap="trun_to_photo" data-c-name="{{item.colum_name}}">
+        <image  src="{{item.imagePath[0]}}" data-c-name="{{item.colum_name}}"></image> 
+        <view data-c-name="{{item.colum_name}}"> {{item.colum_name}}</view>
       </view>
 
     </view>
 
     <!-- 增加相册模块 -->
    <view bindtap="upload_image" class="upload-box" wx:if="{{!is_loading}}" >
-        上传图片
+        <image src="/images/add.png" style="width:100%; height:100%;"></image>
       </view>
     
 <!-- 上传中显示 -->

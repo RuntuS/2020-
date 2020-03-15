@@ -18,7 +18,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     
+    this.initImage(this);
   },
 
   //进入页面的时候，需要进行的
@@ -53,7 +53,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.initImage(this);
+    
   },
 
   /**
@@ -228,10 +228,10 @@ Page({
 
   ///详细图片跳转页面
   trun_to_photo(e){
-    let colum_name = e.target.dataset.name;
+    console.log(this.data.the_init_cloud_photo)
     console.log(e);
     wx.navigateTo({
-      url: `./wiki-photo/wiki-photo?c_name=${colum_name}`,
+      url: `./wiki-photo/wiki-photo?c_name=${e.target.dataset.cName}`,
     })
 
   }
