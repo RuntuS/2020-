@@ -1,0 +1,2 @@
+<button bindtap="uploading">云函数上传图片</button>
+<button bindtap="find_data">查看数据</button>
