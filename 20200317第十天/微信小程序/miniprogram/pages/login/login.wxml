@@ -1,0 +1,1 @@
+<button bindtap="httpRequest">发送请求</button>
